@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Selectors</title>
+    <style>
+        /* 1️⃣ Element Selector */
+p {
+  font-family: Arial;
+}
+
+/* 2️⃣ ID Selector */
+#main-title {
+  text-align: center;
+  color: darkblue;
+}
+
+/* 3️⃣ Class Selector */
+.container {
+  width: 400px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* 4️⃣ Descendant Selector */
+.container p {
+  color: green;
+}
+
+/* 5️⃣ Child Selector */
+.container > p {
+  color: red;
+}
+
+/* 6️⃣ Adjacent Sibling Selector */
+h2 + p {
+  font-weight: bold;
+}
+
+/* 7️⃣ General Sibling Selector */
+h2 ~ p {
+  background-color: lightgray;
+}
+
+/* Extra Styling */
+.box {
+  border: 1px solid blue;
+  padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1 id="main-title">My Simple Website Using All Selectors</h1>
+
+  <div class="container">
+    <p>This is a direct paragraph inside container.</p>
+
+    <section>
+      <p>This is inside section.</p>
+    </section>
+
+    <h2>Services</h2>
+    <p>Web Design</p>
+    <p>App Development</p>
+
+    <div class="box">
+      <p>Paragraph inside box</p>
+    </div>
+  </div>
+</body>
+</html>

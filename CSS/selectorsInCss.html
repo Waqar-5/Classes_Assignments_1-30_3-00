@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* umiversal selector  */
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            color: tan;
+            text-align: center
+        }
+
+
+
+        /* element selector starts */
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: cornflowerblue;
+        }
+
+        p {
+            background-color: beige;
+        }
+
+        /* element selector ends */
+
+        /* id selector starts */
+        #id-selector {
+            color: burlywood;
+        }
+
+        #my-para {
+            background-color: brown;
+            color: white;
+        }
+
+        /* id selector ends */
+
+        /* class selector starts */
+        .class-selector {
+            color: blue;
+            background-color: antiquewhite;
+        }
+
+        .class-para {
+            color: chocolate;
+
+        }
+        /* class selector ends */
+
+        /* grouping selector starts */
+        .mysection h4, h5, p{
+            color: cadetblue;
+            background-color: darkgray;
+            text-align: justify
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Element seclctors</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, amet et, ducimus cumque labore
+            consectetur deleniti ab eligendi nam harum assumenda dolor, quam laborum. Nam officiis ullam dignissimos
+            iure libero. Incidunt animi quae ex commodi expedita neque saepe. Nulla ut a neque voluptas, commodi vero ex
+            cupiditate et voluptatibus illo aliquam, perferendis, corporis minima sit maxime. Voluptate delectus id
+            dignissimos repellendus, voluptas doloremque odit minus suscipit quisquam amet tenetur? Odio odit iusto
+            voluptatem. Quos beatae quae est qui repudiandae explicabo, delectus laudantium iste molestias minima!
+            Laborum qui, deserunt asperiores cumque voluptatibus saepe cum quasi nesciunt quas minima? Nihil,
+            accusantium vitae.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="id-selector">ID selector</h2>
+            <p id="my-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat similique nam
+                delectus
+                consequatur, harum dolorum a eveniet saepe velit, voluptas nobis laboriosam commodi voluptatum
+                voluptatibus quaerat quos accusamus quis, eos quibusdam provident? Suscipit cumque amet laborum nostrum
+                similique aut quas, quasi enim molestiae, veritatis ullam unde adipisci incidunt consectetur!</p>
+        </section>
+
+        <section>
+            <h3 class="class-selector">Class Selector</h3>
+            <p class="class-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit provident totam
+                dolorum quam, voluptate
+                iste facere assumenda error laudantium tempore eligendi veniam. Repudiandae, animi eius. Ratione nisi
+                natus nulla tenetur necessitatibus animi nemo distinctio quas, dignissimos, similique assumenda quae
+                facilis nobis. Aut facere tenetur porro odit sit soluta quis quo!</p>
+        </section>
+
+        <!-- grouping selectors -->
+        <section class="mysection">
+            <h4>Grouping selectors</h4>
+            <h5>Learn and Learn</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ducimus, nam quaerat sint suscipit
+                impedit ut totam consectetur aperiam minus. Unde asperiores saepe explicabo corporis distinctio, vitae
+                reiciendis laborum quasi maxime vero atque obcaecati accusamus nemo sed doloribus est natus sit vel
+                repellat consequatur eum numquam enim quod? Accusamus incidunt omnis quia. Beatae, nemo dolor temporibus
+                placeat sint cum assumenda soluta ipsum commodi alias, vel exercitationem accusamus veniam accusantium
+                aspernatur. Deserunt sit quasi eum consectetur blanditiis temporibus eos veritatis pariatur
+                reprehenderit. Explicabo nostrum ratione voluptatem sint neque aliquid maiores enim aut, ex velit
+                dignissimos, adipisci ullam laudantium quasi saepe iusto ea quibusdam possimus repellendus earum facilis
+                cum quisquam! Necessitatibus, iusto placeat? Natus tempore, perspiciatis dolor maiores a expedita
+                molestias quis harum incidunt magnam voluptatum neque atque debitis consequatur, vitae voluptates sunt,
+                dolore aliquam quod illo facilis quaerat. Fuga voluptatibus ea quibusdam labore fugit, voluptates,
+                consectetur repudiandae sapiente officia nisi ipsum velit provident repellendus tenetur quidem dicta
+                laudantium ut sit deleniti doloremque fugiat, pariatur voluptate debitis. Ab laboriosam voluptatem
+                nesciunt porro saepe! Reprehenderit, molestias voluptates quibusdam doloremque cum aperiam laborum
+                deserunt! Iusto ex optio adipisci nostrum earum odio! Perspiciatis quas delectus numquam, modi maxime
+                quod optio aperiam eligendi vitae non at.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
