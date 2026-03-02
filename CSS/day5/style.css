@@ -1,0 +1,132 @@
+body{
+    background-color: darkgray;
+}
+header{
+    text-align: justify;
+    background-color:rgb(6, 176, 111);
+}
+#head-1{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.textcolor{
+    color: darkblue;
+}
+#head-2{
+    color: rgb(5, 179, 109);
+}
+/* Text Transformation CSS */
+#none{
+    text-transform: none;
+}
+#capitilize{
+    text-transform: capitalize;
+}
+#uppercase{
+    text-transform: uppercase;
+}
+#lowercase{
+    text-transform: lowercase;
+}
+#h5{
+    color: darkblue;
+}
+/* CSS Combinator */
+div p {
+    color: rgb(53, 2, 86);
+}
+.Combinator{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* task */
+#task p{
+    color: rgb(89, 34, 141);
+    font-size: xx-large;
+}
+
+/* Border in CSS */
+
+#border-1{
+    border: rgb(255, 0, 0);
+    border-style: dotted ;
+    border-width: 10px
+}
+#border-2{
+    border: green;
+    border-style: dashed ;
+    border-width: 10px;
+}
+#border-3{
+    border: 10px yellow;
+    border-style: solid ;
+}
+#border-4{
+    border: 10px blue;
+    border-style: double ;
+}
+#border-5{
+    border: 10px mediumseagreen;
+    border-style: groove ;
+}
+#border-6{
+    border: 10px navy;
+    border-style: ridge ;
+}
+#border-7{
+    border: 10px gold;
+    border-style: inset ;
+}
+#border-8{
+    border: 10px violet;
+    border-style: outset ;
+}
+#border-9{
+    border: 10px rgb(10, 122, 147);
+    border-style: none ;
+}
+#border-10{
+    border: 10px maroon;
+    border-style: hidden ;
+}
+
+/* Borders indivisual style */
+
+#border{
+    border: 10px yellow;
+    border-left-style: inset;
+    border-right-style: dashed;
+    border-top-style: ridge;
+    border-bottom-style: outset;
+    border-left-color: blue;
+    border-right-color: green;
+    border-left-color: red;
+    border-left-color: yellow;
+}
+
+/* border Raduis */
+
+#border-radius{
+    border: 5px solid red;
+    border-radius: 20px;
+}
+
+/* Margin or padding */
+
+.title{
+    color: coral ;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#para{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    
+    color: cadetblue;
+    text-align: left;
+    background: linear-gradient(130deg,aliceblue,cyan,rgb(29, 146, 255));
+    margin: 40px;
+    padding: 25px;
+}
