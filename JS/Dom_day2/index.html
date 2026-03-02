@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events using DOM</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        #box{
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            line-height: 200px;
+            /* margin: 20px; */
+            border: 5px solid wheat;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .title{
+            color: mediumspringgreen;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>All About Events</h1>
+
+        <!--inline method 1 (Not Recommanded) -->
+         <!-- <button onclick='alert("Hello")'>Onclcik</button> -->
+<!--  mouse events -->
+  <h2 class="title">Mouse Events</h2>
+         <button id="btn">Onclick</button>
+         <div id="box">
+            hover or click Me
+         </div>
+
+         <!-- keyboards event 
+           -->
+         <h2 class="title">Key Boards Events</h2>
+         <input type="text"  id="inputbox" placeholder="Enter something">
+         <p id="output"></p>
+
+
+    </header>
+
+    <script src="script.js"></script>
+    <!-- <script src="script1.js"></script> -->
+</body>
+</html>
