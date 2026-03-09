@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <!-- <link rel="stylesheet" href="./Pseudo-Class.css"> -->
+    <style>
+        /* body{
+            background-color: black;
+        } */
+
+  h1{
+    color: white;
+    text-align: center;
+    background: linear-gradient(150deg, gold, brown, blue, green, pink, red);
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;   /* space from top */
+    padding: 10px;
+    /* border: 5px solid blue;  corrected */
+    border-radius: 10px;
+     box-shadow: 6px 0px 1px blue;
+}
+
+        h4{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            background: linear-gradient(150deg, gold, brown, blue, green, pink, red);
+            width: fit-content;
+            margin: auto;
+            margin-top: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 6px 0px 1px blue;
+
+
+            
+        }
+        /* unvisited link */
+
+        a:link {
+            color: burlywood;
+        }
+
+        /* visited link */
+
+        a:visited {
+            color: mediumaquamarine;
+        }
+
+        /* After Hover on link */
+        a:hover {
+            color: gold;
+            background-color: blue;
+            padding: 8px;
+            text-decoration: none;
+            font-family: Archivo Black;
+        }
+
+        a:active {
+            color: coral;
+            background-color: navy;
+            padding: 8px;
+            text-decoration: none;
+            font-family: Archivo Black;
+        }
+
+        /* a.pseudo:hover{
+    color: gold;
+    background-color: black;
+    padding: 8px;
+    text-decoration: none;
+    font-family: Archivo Black;
+}
+a.pseudo:active{
+    color: coral;
+    background-color: navy;
+    padding: 8px;
+    text-decoration: none;
+    font-family: Archivo Black;
+} */
+
+
+        a.highlight:hover {
+            letter-spacing: 5px;
+            word-spacing: 8px;
+            background-color: blue;
+
+        }
+
+
+        p.text-pseudo::first-letter {
+            font-size: 70px;
+        }
+
+        p.text-pseudo::first-line {
+            color: gold;
+        }
+
+       #para-one{
+            text-align: justify;
+            background-color: rgb(55, 55, 221);
+            color: white;
+            margin: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            /* box shadow */
+            /* box-shadow: 4px 7px 12px wheat; */
+            /* box-shadow: 34px 7px 12px wheat; */
+            /* box-shadow: 74px 7px 12px wheat; */
+            /* box-shadow: 74px 50px 12px wheat; */
+            box-shadow: 2px 2px 1px wheat;
+
+        }
+
+        #para-one:hover{
+            /* background-color: blanchedalmond; */
+            background: linear-gradient(135deg, gold, black);
+            color: black;
+            border: 15px;
+            margin: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+        
+      #toolTipPara{
+    display: none;
+    color: white;
+    font-size: 30px;
+    background: black;
+    padding: 5px;
+}
+
+#toolTip:hover #toolTipPara{
+    display: block;
+    cursor: pointer;
+}
+
+#fw{
+    font-weight: bold;
+    margin-top: 70px;
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow:1em 1em 2em salmon;
+    font-size: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+
+    
+    <!-- visited link -->
+
+    <h1>
+        <code>Pseudo Classes in CSS</code>
+    </h1>
+    <a href="" target="_blank">Click me!</a>
+    <hr />
+    <p>Pseudo-classes can be combined with HTML classes example below</p>
+    <a href="#" class="highlight">Apply Now</a>
+
+
+
+
+
+      <p id="fw">This is all about Bold </p>
+
+
+
+
+
+    <hr>
+    <h4 >Text Pseudo-classes</h4>
+
+
+
+    <div id="para-one">
+
+        <p class="text-pseudo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex fugit, repellat possimus eligendi corrupti
+        blanditiis dolorum odit delectus dolor hic temporibus nihil dolorem qui aspernatur magnam praesentium cumque
+        quos id, culpa iure. Alias praesentium culpa reprehenderit tempore velit sit omnis cupiditate, maiores facilis
+        voluptas dolorem cumque itaque suscipit, voluptatem necessitatibus fuga quasi, vitae id atque minima? Aut ex
+        quia velit! Voluptatibus deleniti consequuntur rem provident inventore beatae laboriosam possimus recusandae
+        sapiente, assumenda voluptatem, at repellat? Saepe, totam laboriosam! Asperiores amet commodi cum dolores harum
+        doloremque totam tempore ex obcaecati ducimus? Eligendi illum ullam incidunt cupiditate, assumenda aliquid vel
+        quisquam aliquam sapiente optio. Culpa nesciunt ipsa consequuntur, minus esse nobis, animi quidem corporis
+        magnam, delectus excepturi debitis beatae quia ab at magni suscipit? Ratione sequi aspernatur, vitae nam
+        accusantium quod doloremque ab esse porro beatae maxime, ut ex, aperiam dolor cumque facere fugit id ipsum modi
+        qui. Iure, dolorum deleniti facere consequatur quam maiores iste aut quibusdam sit fuga vero odio eos. Quisquam
+        quam inventore optio voluptatibus, placeat doloribus labore accusantium animi soluta debitis dicta, repudiandae
+        natus fugit beatae, ratione ducimus laborum reprehenderit molestiae omnis earum error eius itaque consequuntur.
+        Excepturi nemo blanditiis laudantium eveniet, officiis obcaecati corrupti! Modi, veritatis deserunt!
+    </p>
+
+    </div>
+
+   <div id="toolTip">
+    hover me!
+    <p id="toolTipPara">
+        This is a tooltip message!
+    </p>
+
+   </div>
+
+  
+
+</body>
+
+</html>

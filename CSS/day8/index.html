@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector Examples</title>
+
+    <style>
+        /* Adjacent Selector */
+
+        /* 1 */
+        h1+p {
+            color: blue;
+        }
+
+        /* 2 */
+        img+p {
+            font-style: italic;
+        }
+
+        /* 3 */
+        li+li {
+            margin-top: 10px;
+            color: purple;
+        }
+
+        /* 4 */
+        input+label {
+            color: green;
+        }
+
+        /* 5 */
+        input+span {
+            color: red;
+        }
+
+        /* 6 */
+        p+div {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        /* 7 */
+        h2+a {
+            color: orange;
+            font-weight: bold;
+        }
+
+        /* 8 */
+        input+button {
+            background: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        /* 9 */
+        blockquote+p {
+            font-weight: bold;
+        }
+
+        /* 10 */
+        header+section {
+            padding: 20px;
+            background: #f0f0f0;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: blue;
+            font-size: 18px;
+        }
+
+        /* Another Descendant Example */
+        section span {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* Another Child Selector Example */
+        ul>li {
+            color: blue;
+        }
+
+        /* General Selector */
+        h1~p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- adjacent selector example -->
+
+    <h2>1. Paragraph After Heading</h2>
+    <h1>Main Title</h1>
+    <p>This paragraph becomes blue.</p>
+    <p>This one is normal.</p>
+
+    <hr />
+
+    <h2>2. Paragraph After Image</h2>
+    <img src="../images/nature.jpg" width="200px" />
+    <p>This paragraph becomes italic.</p>
+
+    <hr />
+
+    <h2>3. List Item Spacing</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <hr />
+
+    <h2>4. Checkbox + Label</h2>
+    <input type="checkbox" />
+    <label>Accept Terms</label>
+
+    <hr />
+
+    <h2>5. Input + Span</h2>
+    <input type="text" placeholder="Enter name" />
+    <span>Error message</span>
+
+    <hr />
+
+    <h2>6. Div After Paragraph</h2>
+    <p>Paragraph text</p>
+    <div>This div gets background.</div>
+
+    <hr />
+
+    <h2>7. Link After Heading</h2>
+    <h2>Article Title</h2>
+    <a href="#">Read More</a>
+
+    <hr />
+
+    <h2>8. Button After Input</h2>
+    <input type="text" placeholder="Search" />
+    <button>Search</button>
+
+    <hr />
+
+    <h2>9. Paragraph After Blockquote</h2>
+    <blockquote>This is a quote.</blockquote>
+    <p>This paragraph becomes bold.</p>
+
+    <hr />
+
+    <h2>10. Section After Header</h2>
+    <header>Website Header</header>
+    <section>Main content area</section>
+
+    <hr>
+
+    <!-- Descandent Selector -->
+
+    <h1>Descendant Selector Example</h1>
+
+    <div>
+        <p>This paragraph is inside div (styled blue).</p>
+
+        <section>
+            <p>This paragraph is inside section but still inside div (styled blue).</p>
+        </section>
+
+        <article>
+            <section>
+                <p>This paragraph is deeply nested inside div (styled blue).</p>
+            </section>
+        </article>
+    </div>
+
+    <p>This paragraph is outside div (not styled).</p>
+
+    <section>
+        <span>This span inside section becomes red.</span>
+    </section>
+
+    <hr>
+
+    <!-- Child Parent Selector -->
+
+    <h1>Child Selector Example</h1>
+
+    <div>
+        <p>This paragraph is a direct child of div (styled green).</p>
+
+        <section>
+            <p>This paragraph is inside section, not a direct child of div (not styled).</p>
+        </section>
+
+        <article>
+            <p>This paragraph is inside article, not a direct child of div (not styled).</p>
+        </article>
+    </div>
+
+    <h2>List Example</h2>
+
+    <ul>
+        <li>Item 1 (styled blue)</li>
+        <li>Item 2 (styled blue)</li>
+        <li>Item 3 (styled blue)</li>
+    </ul>
+
+    <hr>
+
+    <!-- General Selector -->
+
+    <h1>Heading</h1>
+
+    <p>یہ پیراگراف h1 کے بعد ہے۔</p>
+    <p>یہ بھی h1 کے بعد ہے۔</p>
+
+    <div>
+        <p>یہ div کے اندر ہے اس لیے select نہیں ہوگا۔</p>
+    </div>
+
+</body>
+
+</html>
