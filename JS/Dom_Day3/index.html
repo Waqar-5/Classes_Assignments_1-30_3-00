@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Prepend Example</title>
+</head>
+<body>
+  <div id="box">
+    <p>Existing content</p>
+  </div>
+
+  <button onclick="addSingle()">Add Single Element</button>
+  <button onclick="addMultiple()">Add Multiple Elements</button>
+
+  <script>
+    const parent = document.getElementById("box");
+
+    // --- Add single element dynamically ---
+    document.getElementById("addSingle").addEventListener("click", () => {
+      let single = document.createElement("p");
+      single.textContent = "Hello at the start!";
+      parent.prepend(single);
+    });
+
+    // --- Add multiple elements dynamically ---
+function addMultiple(){
+    
+}
+  
+  </script>
+</body>
+</html>
